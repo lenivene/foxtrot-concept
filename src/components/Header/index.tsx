@@ -4,7 +4,7 @@ import React, {
   useEffect,
   useRef
 } from 'react';
-import { Link } from '@utils/Link';
+import { Link } from '@components/Link';
 
 // Icons
 import {
@@ -13,12 +13,23 @@ import {
   FaShoppingCart,
   FaUser,
 } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import styles from "./style.module.scss";
 
+// Hooks
+import { useProduct } from '@hooks/useProduct';
+
+// Utils
+import { getCategories } from '@utils/getCategories';
+
 export const Header: React.FC = () => {
   const menuDropdownRef = useRef<HTMLLIElement>(null);
-
+  const menuWrapperRef = useRef<HTMLElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const product = useProduct();
+  const categories = getCategories();
+  
   const toggleDropdown = useCallback(() => {
     const dropdown = menuDropdownRef.current.querySelector(".dropdown-menu");
 
@@ -35,12 +46,16 @@ export const Header: React.FC = () => {
     }, 200);
   }, []);
 
+  const handleHamburgerMenu = () => {
+    menuRef.current.classList.toggle('d-block');
+    menuWrapperRef.current.classList.toggle('d-none');
+  }
+
   useEffect(() => {
     menuDropdownRef.current.addEventListener('click', toggleDropdown);
 
     return () => {
       window.removeEventListener('click', toggleDropdown);
-      menuDropdownRef.current.removeEventListener('click', toggleDropdown);
     }
   }, [toggleDropdown]);
 
@@ -79,8 +94,8 @@ export const Header: React.FC = () => {
                     </div>
                 </form>
               </div>
-              <div className="col-lg-2 col-md-4 col-6">
-                <div className="widgets-wrap float-md-right text-right">
+              <div className="col-lg-2 col-md-4 col-6 d-flex justify-content-end">
+                <div className="widgets-wrap">
                   <div className={[styles.widgetHeader, styles.icontext].join(' ')}>
                     <a href="#" className={[styles.icon, "icon-sm rounded-circle border"].join(' ')}>
                       <FaUser
@@ -89,12 +104,25 @@ export const Header: React.FC = () => {
                     </a>
                   </div>
                   <div className={[styles.widgetHeader, "mr-3"].join(' ')}>
-                    <a href="#" className="icon icon-sm rounded-circle border">
-                      <FaShoppingCart />
-                    </a>
+                    <Link href="/carrinho">
+                      <a className="icon icon-sm rounded-circle border">
+                        <FaShoppingCart />
+                      </a>
+                    </Link>
                     <span
                       className={[styles.widgetCountNotify, "badge rounded-circle bg-warning"].join(' ')}
-                    >0</span>
+                    >
+                      {product.totalInCart()}
+                    </span>
+                  </div>
+                  <div className={[styles.widgetHeader, "mr-3", "d-inline-block", "d-lg-none"].join(' ')}>
+                    <button
+                      onClick={handleHamburgerMenu}
+                      className="shadow-none bg-transparent navbar-toggler"
+                      type="button"
+                    >
+                      <GiHamburgerMenu />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -102,13 +130,12 @@ export const Header: React.FC = () => {
           </div>
         </section>
       </header>
-      <nav className="navbar navbar-main navbar-expand-lg navbar-light bg-primary">
+      <nav
+        className="navbar navbar-main navbar-expand-lg navbar-light bg-primary d-none d-md-block"
+        ref={menuWrapperRef}
+      >
         <div className="container">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-      
-          <div className="collapse navbar-collapse" id="main_nav">
+          <div className="collapse navbar-collapse" ref={menuRef}>
             <ul className="navbar-nav text-white">
               <li className="nav-item dropdown" ref={menuDropdownRef}>
                 <span
@@ -117,14 +144,13 @@ export const Header: React.FC = () => {
                   <strong><FaBars />&nbsp;Todos os setores</strong>
                 </span>
                 <div className="dropdown-menu text-primary">
-                  <a className="dropdown-item" href="#">Guitarra/Violão</a>
-                  <a className="dropdown-item" href="#">Contrabaixo</a>
-                  <a className="dropdown-item" href="#">Teclado/Piano</a>
-                  <a className="dropdown-item" href="#">Bateria/Percussão</a>
-                  <a className="dropdown-item" href="#">Pró Áudio</a>
-                  <a className="dropdown-item" href="#">Orquestral</a>
-                  <a className="dropdown-item" href="#">Pc/Software</a>
-                  <a className="dropdown-item" href="#">Infantil</a>
+                  {categories.map((category) => (
+                    <Link key={category.id} href={`/categoria/${category.id}`}>
+                      <a className="dropdown-item">
+                        {category.name}
+                      </a>
+                    </Link>
+                  ))}
                 </div>
               </li>
               <li className="nav-item">

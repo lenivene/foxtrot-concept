@@ -6,6 +6,7 @@ interface Props extends LinkProps {
   activeClassName?: string;
   children: any;
 }
+
 export const Link = ({ href, children, activeClassName = 'active', ...props }: Props) => {
   const router = useRouter();
   const child = React.Children.only(children);

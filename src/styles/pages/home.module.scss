@@ -12,9 +12,13 @@
     }
   }
 
-  div div ul li {
-    img {
-      width: 100%;
+  div div ul {
+    margin-top: .7rem;
+
+    li {
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -63,7 +67,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-
+        min-height: 48px;
         color: $dark;
       }
     }

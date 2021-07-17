@@ -1,17 +1,20 @@
-import { useRef, useEffect } from 'react';
-import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import Glide from '@glidejs/glide';
+import { useRef, useEffect } from 'react';
 
 // Icons
-import { FaCcMastercard, FaCcVisa, FaDollarSign, FaTruck } from 'react-icons/fa';
+import { FaDollarSign, FaTruck } from 'react-icons/fa';
 import { IoLogoWhatsapp } from "react-icons/io";
 
-import { Header } from '@components/Header';
+
+// Styles
 import styles from "@styles/pages/home.module.scss";
 
 // Data
 import productsData from "@mock/data.json";
+
+// Utils
 import { formatPrice } from '@utils/formatPrice';
 
 export default function Home() {
@@ -25,10 +28,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Foxtrot Instrumentos Musicais - Quem gosta de música passa por aqui!</title>
-      </Head>
-      <Header />
       <section className={styles.sectionIntro}>
         <div className="container">
           <div ref={slider} className="glide">
@@ -37,6 +36,7 @@ export default function Home() {
                 <li className="glide__slide">
                   <Image
                     src="/slider/1-hd.jpg"
+                    className="img-fluid rounded"
                     width={1280}
                     height={280}
                   />
@@ -44,6 +44,7 @@ export default function Home() {
                 <li className="glide__slide">
                   <Image
                     src="/slider/2-hd.jpg"
+                    className="img-fluid rounded"
                     width={1280}
                     height={280}
                   />
@@ -115,14 +116,18 @@ export default function Home() {
           <header className={styles.headerProductsContainer}>
             <h2 className={styles.headerProductTitle}>Em destaque</h2>
             <div>
-              <a href="#" className="btn btn-outline-primary float-right">Ver todos</a>
+              <Link href="/destaques">
+                <a className="btn btn-outline-primary float-right">
+                  Ver todos
+                </a>
+              </Link>
             </div>
           </header>
           <div className="row">
-            {productsData.map((product) => (
+            {productsData.products.map((product) => (
               <div key={product.slug} className="col-md-3 mb-4">
                   <div className={["card", styles.cardProductGrid].join(' ')}>
-                    <a href="#" className={styles.imgWrap}>
+                    <a href={`/produto/${product.slug}`} className={styles.imgWrap}>
                       <Image
                         src={product.thumbnail}
                         alt={product.title}
@@ -131,7 +136,7 @@ export default function Home() {
                       />
                     </a>
                     <figcaption className={styles.infoWrap}>
-                      <a href="#" className={styles.titleProduct}>
+                      <a href={`/produto/${product.slug}`} className={styles.titleProduct}>
                         {product.title}
                       </a>
                       <div className={[styles.priceProduct, "mt-1"].join(' ')}>{formatPrice(product.price)}</div>
@@ -142,23 +147,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer>
-        <div className="container">
-        <section className="border-top pt-3 row">
-          <div className="col-md-2">
-            <p className="text-muted">&copy; {new Date().getFullYear()} Foxtrot</p>
-          </div>
-          <div className="col-md-8 text-md-center">
-            <span className="px-2">televendas@foxtrot.com.br</span>
-            <span className="px-2">71 3616-7777</span>
-          </div>
-          <div className="col-md-2 d-md-flex justify-content-md-end text-muted">
-            <span className="px-1"><FaCcVisa size={24} /></span>
-            <span className="px-1"><FaCcMastercard size={24} /></span>
-          </div>
-        </section>
-        </div>
-      </footer>
     </>
   )
 }

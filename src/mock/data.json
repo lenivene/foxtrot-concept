@@ -1,122 +1,285 @@
-[
-  {
-    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937007m.jpg",
-    "title": "Correia para Instrumento Basso BORDADAS VT-L- EXÉRCITO",
-    "slug": "correia-para-instrumento-basso-bordadas-vt-l-exercito",
-    "description": "Correia para Instrumento Basso BORDADAS VT-L- EXÉRCITO é produzida em material sintético e possui 6cm de largura.",
-    "price": 59.99,
-    "quantityInStock": 2,
-    "variables": [
-      {
-        "name": "cor",
-        "values": [
-          {
-            "price": 49.99,
-            "value": "Bege",
-            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937005m.jpg"
-          },
-          {
-            "price": 59.99,
-            "value": "Marrom",
-            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937005m.jpg"
-          }
-        ]
-      }
-    ],
-    "technicalInformation": [
-      "Para uso em violão e guitarra",
-      "Material: Sintético",
-      "Largura: 6cm"
-    ]
-  },
-  {
-    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/04020484085001m.jpg",
-    "title": "Tajon FSA BASS TAJ75",
-    "slug": "tajon-fsa-bass-taj75",
-    "description": "Tajon FSA BASS TAJ75 foi desenvolvido pra quem procura um som mais grave e tem preferência por polegadas maiores de tambor. Móvel, possui ajuste de ângulo e mudança de posição tanto para destro como para canhoto.",
-    "price": 1.499,
-    "quantityInStock": 1,
-    "variables": null,
-    "technicalInformation": [
-      "Tajon FSA BASS TAJ75",
-      "Bumbo 14",
-      "Caixa 10 (esteira 24 fios)",
-      "Tom 14",
-      "Acabamento: pintura laqueada",
-      "Dimensões (AxLxP): 629x382x530mm",
-      "Peso: 10,08Kg"
-    ]
-  },
-  {
-    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/05020072025001m.jpg",
-    "title": "Mixer Analógico Yamaha MG12XU - 12 canais",
-    "slug": "mixer-analogico-yamaha-mg12xu-12-canais",
-    "description": "Mixer Analógico Yamaha MG12XU - 12 canais possui corpo de metal e baixo peso, tornando ideal para estrada.",
-    "price": 2959,
-    "quantityInStock": 9,
-    "variables": null,
-    "technicalInformation": [
-      "4 entradas de microfones (MAX 6) / 4 entradas estéreo",
-      "2 Barramentos de grupo e 1 Barramento estéreo",
-      "2 Saídas AUX (incluindo efeito)",
-      "Pré-amplificador D-PRE que utiliza o circuito invertido de Darlington",
-      "1-Potenciómetro de control de compressão",
-      "Efeitos de alto nível: SPX com 24 programas",
-      "Funções Audio via USB 24-bit / 192kHz 2in / 2out",
-      "Compatível com iPad (2 ou posterior), através de adaptadores apropriados (APPLE)",
-      "Chave de atenuação (PAD) nos canais mono",
-      "Phantom Power - Entrada de Mic +48V",
-      "Saída XLR balanceada",
-      "Fonte de alimentação elétrica universal interna, compatível em todo mundo",
-      "Chassi de metal",
-      "Dimensões (W×H×D): 308mm x 118mm x 422mm",
-      "Peso: 4.2 kg"
-    ]
-  },
-  {
-    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01050342766001m.jpg",
-    "title": "Pedal BOSS ST-2 Power Stack",
-    "slug": "pedal-boss-st-2-power-stack",
-    "description": "Pedal BOSS ST-2 Power Stack O ST-2 é um pedal de distorção único, que utiliza a experiência da BOSS em simulações de amplificador para trazer timbres de amplificadores cabeça e caixa num único pedal. O knob SOUND gera simultaneamente aumento de ganho e ajustes de timbre, criando sons de vintage crunch, drives encorpados e distorções insanas.",
-    "variables": null,
-    "price": 589,
-    "quantityInStock": 2,
-    "technicalInformation": [
-
-    ]
-  },
-  {
-    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798002m.jpg",
-    "title": "Escaleta Concert M37 37 Teclas BL",
-    "slug": "escaleta-concert-m37-37-teclas-bl",
-    "description": "Escaleta Concert M37 37 Teclas PK é um ótimo instrumento de sopro com excelente custo-benefício para quem procura qualidade sonora e bom acabamento aliada a um excelente preço.",
-    "price": 199,
-    "quantityInStock": 5,
-    "variables": [
-      {
-        "name": "cor",
-        "values": [
-          {
-            "price": 199,
-            "value": "Azul",
-            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798002m.jpg"
-          },
-          {
-            "price": 199,
-            "value": "Preto",
-            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798001m.jpg"
-          },
-          {
-            "price": 199,
-            "value": "Rosa",
-            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798003m.jpg"
-          }
-        ]
-      }
-    ],
-    "technicalInformation": [
-      "Escaleta Concert M37 37 Teclas PK",
-      "Acompanha bag e bocal"
-    ]
-  }
-]
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Guitarra e Violão",
+      "slug": "guitarra-e-violao",
+      "parent": null
+    },
+    {
+      "id": 2,
+      "name": "Acessórios",
+      "slug": "acessorios",
+      "parent": 1
+    },
+    {
+      "id": 3,
+      "name": "Correias",
+      "slug": "correias",
+      "parent": 2
+    },
+    {
+      "id": 4,
+      "name": "Bateria e Percussão",
+      "slug": "bateria-e-percussao",
+      "parent": null
+    },
+    {
+      "id": 5,
+      "name": "Percussão",
+      "slug": "percussao",
+      "parent": 4
+    },
+    {
+      "id": 6,
+      "name": "Cajons",
+      "slug": "cajons",
+      "parent": 5
+    },
+    {
+      "id": 7,
+      "name": "Pro-audio",
+      "slug": "pro-audio",
+      "parent": null
+    },
+    {
+      "id": 8,
+      "name": "Consoles",
+      "slug": "consoles",
+      "parent": 7
+    },
+    {
+      "id": 9,
+      "name": "Mixers",
+      "slug": "mixers",
+      "parent": 8
+    },
+    {
+      "id": 10,
+      "name": "Pedais e Efeitos",
+      "slug": "pedais-e-efeitos",
+      "parent": 1
+    },
+    {
+      "id": 11,
+      "name": "Pedais",
+      "slug": "pedais",
+      "parent": 10
+    },
+    {
+      "id": 12,
+      "name": "Orquestral",
+      "slug": "orquestral",
+      "parent": null
+    },
+    {
+      "id": 13,
+      "name": "Metais e Sopros",
+      "slug": "metais-e-sopros",
+      "parent": 12
+    },
+    {
+      "id": 14,
+      "name": "Escaletas",
+      "slug": "escaletas",
+      "parent": 13
+    },
+    {
+      "id": 15,
+      "name": "Bongôs",
+      "slug": "bongos",
+      "parent": 5
+    },
+    {
+      "id": 16,
+      "name": "Cabos",
+      "slug": "cabos",
+      "parent": 1
+    },
+    {
+      "id": 17,
+      "name": "Instrumentos",
+      "slug": "instrumentos",
+      "parent": 16
+    }
+  ],
+  "products": [
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937007m.jpg",
+      "title": "Correia para Instrumento Basso BORDADAS VT-L- EXÉRCITO",
+      "slug": "correia-para-instrumento-basso-bordadas-vt-l-exercito",
+      "description": "Correia para Instrumento Basso BORDADAS VT-L- EXÉRCITO é produzida em material sintético e possui 6cm de largura.",
+      "price": 59.99,
+      "quantityInStock": 2,
+      "category": 3,
+      "variables": [
+        {
+          "name": "cor",
+          "values": [
+            {
+              "price": 49.99,
+              "value": "Bege",
+              "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937005m.jpg"
+            },
+            {
+              "price": 59.99,
+              "value": "Marrom",
+              "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937005m.jpg"
+            }
+          ]
+        }
+      ],
+      "technicalInformation": [
+        "Para uso em violão e guitarra",
+        "Material: Sintético",
+        "Largura: 6cm"
+      ]
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/04020484085001m.jpg",
+      "title": "Tajon FSA BASS TAJ75",
+      "slug": "tajon-fsa-bass-taj75",
+      "description": "Tajon FSA BASS TAJ75 foi desenvolvido pra quem procura um som mais grave e tem preferência por polegadas maiores de tambor. Móvel, possui ajuste de ângulo e mudança de posição tanto para destro como para canhoto.",
+      "price": 1.499,
+      "quantityInStock": 1,
+      "category": 6,
+      "variables": null,
+      "technicalInformation": [
+        "Tajon FSA BASS TAJ75",
+        "Bumbo 14",
+        "Caixa 10 (esteira 24 fios)",
+        "Tom 14",
+        "Acabamento: pintura laqueada",
+        "Dimensões (AxLxP): 629x382x530mm",
+        "Peso: 10,08Kg"
+      ]
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/05020072025001m.jpg",
+      "title": "Mixer Analógico Yamaha MG12XU - 12 canais",
+      "slug": "mixer-analogico-yamaha-mg12xu-12-canais",
+      "description": "Mixer Analógico Yamaha MG12XU - 12 canais possui corpo de metal e baixo peso, tornando ideal para estrada.",
+      "price": 2959,
+      "quantityInStock": 9,
+      "category": 9,
+      "variables": null,
+      "technicalInformation": [
+        "4 entradas de microfones (MAX 6) / 4 entradas estéreo",
+        "2 Barramentos de grupo e 1 Barramento estéreo",
+        "2 Saídas AUX (incluindo efeito)",
+        "Pré-amplificador D-PRE que utiliza o circuito invertido de Darlington",
+        "1-Potenciómetro de control de compressão",
+        "Efeitos de alto nível: SPX com 24 programas",
+        "Funções Audio via USB 24-bit / 192kHz 2in / 2out",
+        "Compatível com iPad (2 ou posterior), através de adaptadores apropriados (APPLE)",
+        "Chave de atenuação (PAD) nos canais mono",
+        "Phantom Power - Entrada de Mic +48V",
+        "Saída XLR balanceada",
+        "Fonte de alimentação elétrica universal interna, compatível em todo mundo",
+        "Chassi de metal",
+        "Dimensões (W×H×D): 308mm x 118mm x 422mm",
+        "Peso: 4.2 kg"
+      ]
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01050342766001m.jpg",
+      "title": "Pedal BOSS ST-2 Power Stack",
+      "slug": "pedal-boss-st-2-power-stack",
+      "description": "Pedal BOSS ST-2 Power Stack O ST-2 é um pedal de distorção único, que utiliza a experiência da BOSS em simulações de amplificador para trazer timbres de amplificadores cabeça e caixa num único pedal. O knob SOUND gera simultaneamente aumento de ganho e ajustes de timbre, criando sons de vintage crunch, drives encorpados e distorções insanas.",
+      "price": 589,
+      "quantityInStock": 2,
+      "category": 11,
+      "variables": null,
+      "technicalInformation": null
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798002m.jpg",
+      "title": "Escaleta Concert M37 37 Teclas BL",
+      "slug": "escaleta-concert-m37-37-teclas-bl",
+      "description": "Escaleta Concert M37 37 Teclas PK é um ótimo instrumento de sopro com excelente custo-benefício para quem procura qualidade sonora e bom acabamento aliada a um excelente preço.",
+      "price": 199,
+      "quantityInStock": 5,
+      "category": 14,
+      "variables": [
+        {
+          "name": "cor",
+          "values": [
+            {
+              "price": 199,
+              "value": "Azul",
+              "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798002m.jpg"
+            },
+            {
+              "price": 199,
+              "value": "Preto",
+              "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798001m.jpg"
+            },
+            {
+              "price": 199,
+              "value": "Rosa",
+              "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798003m.jpg"
+            }
+          ]
+        }
+      ],
+      "technicalInformation": [
+        "Escaleta Concert M37 37 Teclas PK",
+        "Acompanha bag e bocal"
+      ]
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01050342361001m.jpg",
+      "title": "Pedal BOSS ML-2 Metal Core",
+      "slug": "pedal-boss-ml-2-metal-core",
+      "description": "Pedal BOSS ML-2 Metal Core é o mais potente e pesado pedal de distorção de toda a linha BOSS. O ML-2 possui distorção encorpada e graves definidos, ideais para “Nu Metal”, “Grind Core”, “Industrial”, “Hard Core”, e qualquer outro gênero que necessite de timbres esmagadores. Sua distorção feroz irá complementar e ultrapassar as pancadas “infernais” do seu baterista.",
+      "price": 822,
+      "quantityInStock": 4,
+      "category": 11,
+      "variables": null,
+      "technicalInformation": [
+        "Distorções ultra pesadas com excelente dinâmica para “riffs” matadores",
+        "Função “LOW” controla frequências graves, com timbres ideais para guitarras de 7 cordas e afinações baixas",
+        "Função “HIGH” cria timbres mais agressivos e metálicos",
+        "Controles",
+        "Pedal switch, LEVEL knob, LOW knob, HIGH knob, DIST knob",
+        "Conector INPUT jack",
+        "Conector OUTPUT jack",
+        "Conector AC Adaptor jack (DC 9 V)",
+        "Consumo: 36 mA (DC 9 V)",
+        "Cor: Preto"
+      ]
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/04020033065001m.jpg",
+      "title": "Bongô LP Aspire LPA601-AW Natural",
+      "slug": "bongo-lp-aspire-lpa601-aw-natural",
+      "description": "Bongô LP Aspire LPA601-AW foi desenvolvido em Oak e possui uma excelente sonoridade e acabamento sem igual. O LPA 601 conta com aro EZ Curve Rims e é ideal para iniciantes.",
+      "price": 1034,
+      "quantityInStock": 1,
+      "category": 15,
+      "variables": null,
+      "technicalInformation": [
+        "Madeira OAK",
+        "Diametro (6.3/4\" e 8\")",
+        "Aro EZ Curve Rims",
+        "Cor: Natural"
+      ]
+    },
+    {
+      "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01030134713001m.jpg",
+      "title": "Cabo para Instrumento Tecniforte P10-P10 Gorilla - 3m",
+      "slug": "cabo-para-instrumento-tecniforte-p10-p10-gorilla-3m",
+      "description": "Mais do que simplesmente uma fábrica de fios e cabos, a TECNIFORTE é sinônimo de qualidade, inovação, altíssimo desempenho, tecnologia de ponta e sustentabilidade.\n\nA TECNIFORTE usa unicamente os melhores materiais em todos os processos de fabricação:\n\nCobre 100% eletrolítico de alta condutividade com alto nível de pureza e Isento de oxigênio (OFHC).\n\nNada de materiais de 2ª linha ou materiais recuperados, todos polímeros de isolamento e cobertura são virgens, ou seja, estão sendo usados pela primeira vez. Material recuperado pode ser usado em outras aplicações, mas não nos cabos TECNIFORTE.",
+      "price": 85,
+      "quantityInStock": 14,
+      "variables": null,
+      "category": 17,
+      "technicalInformation": [
+        "Modelo: Gorilla",
+        "Extensão: 3m",
+        "Conectores: P10 - P10",
+        "Capacitância alta - beneficia baixas frequências, sendo ideal para sons graves"
+      ]
+    }
+  ]
+}
