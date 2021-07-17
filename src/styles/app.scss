@@ -1,0 +1,78 @@
+@import "./main";
+@import "./helpers/_mixins";
+@import "./helpers/_helpers-classes";
+
+:root{
+  --color-primary: #{$color-primary};
+  --color-link: #{$color-link};
+
+  --white: #{$white};
+  --blue: #{$blue};
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-link;
+  text-align: left;
+  background-color: $white;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+// Background
+@include emphasis-bg-colors("primary", $color-primary);
+@include emphasis-bg-colors("white", $white);
+
+// Texts
+@include emphasis-text-colors("primary", $color-primary);
+@include emphasis-text-colors("white", $white);
+
+// Buttons
+@include emphasis-btn-colors("primary", $white, $color-primary);
+
+.navbar-nav {
+  a.nav-link.active {
+    color: $yellow !important;
+  }
+}
+
+.alice-carousel__prev-btn {
+  display: none !important;
+}
+
+.itemside{
+  position:relative;
+  display:flex;
+  width:100%;
+
+  .aside{
+    position:relative;
+    flex-shrink: 0;
+  }
+
+  .info{
+    padding-left:15px;
+    padding-right:7px;
+  }
+
+	p{
+    margin-bottom:0;
+  }
+
+  .title{
+    display: block;
+    margin-bottom: 5px;
+    color: $dark;
+  }
+
+	a.title:hover{
+    color: $color-primary;
+  }
+}

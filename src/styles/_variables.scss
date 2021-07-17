@@ -1,0 +1,22 @@
+@import "./helpers/_breakpoints";
+
+$color-primary: #284484;
+$color-link: #343a40;
+
+$dark: #212529;
+$white: #fff;
+$blue: #284484;
+$yellow: #FFC200;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");

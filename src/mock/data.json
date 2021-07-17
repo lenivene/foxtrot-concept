@@ -1,0 +1,122 @@
+[
+  {
+    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937007m.jpg",
+    "title": "Correia para Instrumento Basso BORDADAS VT-L- EXÉRCITO",
+    "slug": "correia-para-instrumento-basso-bordadas-vt-l-exercito",
+    "description": "Correia para Instrumento Basso BORDADAS VT-L- EXÉRCITO é produzida em material sintético e possui 6cm de largura.",
+    "price": 59.99,
+    "quantityInStock": 2,
+    "variables": [
+      {
+        "name": "cor",
+        "values": [
+          {
+            "price": 49.99,
+            "value": "Bege",
+            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937005m.jpg"
+          },
+          {
+            "price": 59.99,
+            "value": "Marrom",
+            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01080273937005m.jpg"
+          }
+        ]
+      }
+    ],
+    "technicalInformation": [
+      "Para uso em violão e guitarra",
+      "Material: Sintético",
+      "Largura: 6cm"
+    ]
+  },
+  {
+    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/04020484085001m.jpg",
+    "title": "Tajon FSA BASS TAJ75",
+    "slug": "tajon-fsa-bass-taj75",
+    "description": "Tajon FSA BASS TAJ75 foi desenvolvido pra quem procura um som mais grave e tem preferência por polegadas maiores de tambor. Móvel, possui ajuste de ângulo e mudança de posição tanto para destro como para canhoto.",
+    "price": 1.499,
+    "quantityInStock": 1,
+    "variables": null,
+    "technicalInformation": [
+      "Tajon FSA BASS TAJ75",
+      "Bumbo 14",
+      "Caixa 10 (esteira 24 fios)",
+      "Tom 14",
+      "Acabamento: pintura laqueada",
+      "Dimensões (AxLxP): 629x382x530mm",
+      "Peso: 10,08Kg"
+    ]
+  },
+  {
+    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/05020072025001m.jpg",
+    "title": "Mixer Analógico Yamaha MG12XU - 12 canais",
+    "slug": "mixer-analogico-yamaha-mg12xu-12-canais",
+    "description": "Mixer Analógico Yamaha MG12XU - 12 canais possui corpo de metal e baixo peso, tornando ideal para estrada.",
+    "price": 2959,
+    "quantityInStock": 9,
+    "variables": null,
+    "technicalInformation": [
+      "4 entradas de microfones (MAX 6) / 4 entradas estéreo",
+      "2 Barramentos de grupo e 1 Barramento estéreo",
+      "2 Saídas AUX (incluindo efeito)",
+      "Pré-amplificador D-PRE que utiliza o circuito invertido de Darlington",
+      "1-Potenciómetro de control de compressão",
+      "Efeitos de alto nível: SPX com 24 programas",
+      "Funções Audio via USB 24-bit / 192kHz 2in / 2out",
+      "Compatível com iPad (2 ou posterior), através de adaptadores apropriados (APPLE)",
+      "Chave de atenuação (PAD) nos canais mono",
+      "Phantom Power - Entrada de Mic +48V",
+      "Saída XLR balanceada",
+      "Fonte de alimentação elétrica universal interna, compatível em todo mundo",
+      "Chassi de metal",
+      "Dimensões (W×H×D): 308mm x 118mm x 422mm",
+      "Peso: 4.2 kg"
+    ]
+  },
+  {
+    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/01050342766001m.jpg",
+    "title": "Pedal BOSS ST-2 Power Stack",
+    "slug": "pedal-boss-st-2-power-stack",
+    "description": "Pedal BOSS ST-2 Power Stack O ST-2 é um pedal de distorção único, que utiliza a experiência da BOSS em simulações de amplificador para trazer timbres de amplificadores cabeça e caixa num único pedal. O knob SOUND gera simultaneamente aumento de ganho e ajustes de timbre, criando sons de vintage crunch, drives encorpados e distorções insanas.",
+    "variables": null,
+    "price": 589,
+    "quantityInStock": 2,
+    "technicalInformation": [
+
+    ]
+  },
+  {
+    "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798002m.jpg",
+    "title": "Escaleta Concert M37 37 Teclas BL",
+    "slug": "escaleta-concert-m37-37-teclas-bl",
+    "description": "Escaleta Concert M37 37 Teclas PK é um ótimo instrumento de sopro com excelente custo-benefício para quem procura qualidade sonora e bom acabamento aliada a um excelente preço.",
+    "price": 199,
+    "quantityInStock": 5,
+    "variables": [
+      {
+        "name": "cor",
+        "values": [
+          {
+            "price": 199,
+            "value": "Azul",
+            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798002m.jpg"
+          },
+          {
+            "price": 199,
+            "value": "Preto",
+            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798001m.jpg"
+          },
+          {
+            "price": 199,
+            "value": "Rosa",
+            "thumbnail": "https://www.foxtrot.com.br/Interno/ImgProdutos/06010260798003m.jpg"
+          }
+        ]
+      }
+    ],
+    "technicalInformation": [
+      "Escaleta Concert M37 37 Teclas PK",
+      "Acompanha bag e bocal"
+    ]
+  }
+]

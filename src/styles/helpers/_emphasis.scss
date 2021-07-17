@@ -1,0 +1,74 @@
+@mixin emphasis-bg-colors($parent, $color) {
+  .bg-#{$parent} {
+    background: $color !important;
+  }
+}
+
+@mixin emphasis-text-colors($parent, $color) {
+  .text-#{$parent} {
+    &, .nav-link{
+      color: $color !important;
+    }
+  }
+
+  a.text-#{$parent} {
+    @include hover-focus {
+      color: darken($color, 10%) !important;
+    }
+  }
+}
+
+@mixin emphasis-btn-colors($parent, $textColor, $bgColor) {
+  .btn-#{$parent} {
+    color: $textColor;
+    background-color: $bgColor;
+    border-color: darken($bgColor, 2%);
+
+    @include hover-focus {
+      color: $textColor;
+      background-color: darken($bgColor, 2%);
+      border-color: darken($bgColor, 3%);
+    }
+
+    @include focus {
+      box-shadow: 0 0 0 0.25rem transparentize($bgColor, .5) !important;
+    }
+
+    @include active {
+      color: $textColor;
+      background-color: darken($bgColor, 3%);
+      border-color: darken($bgColor, 4%);
+    }
+  }
+
+  .btn-outline-#{$parent} {
+    color: $bgColor;
+    border-color: $bgColor;
+
+    @include hover-focus {
+      color: $textColor;
+      background-color: $bgColor;
+      border-color: $bgColor;
+    }
+  }
+}
+
+@mixin emphasis-border-colors($parent, $color) {
+  .border-#{$parent} {
+    border-color: $color !important;
+
+    @include hover-focus {
+      border-color: darken($color, 1%) !important;
+    }
+  }
+}
+
+@mixin emphasis-max-width($quanty, $multiple) {
+  @for $i from 1 through $quanty {
+    $width: $i * $multiple;
+
+    .mw-#{$width} {
+      max-width: #{$width}px;
+    }
+  }
+}

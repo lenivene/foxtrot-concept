@@ -1,0 +1,61 @@
+@import "../../styles/main";
+
+.headerMain {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.searchContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+
+  > form {
+    width: 100%;
+  }
+}
+
+.widgetHeader {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  a:hover svg {
+    color: $color-primary;
+  }
+
+  svg {
+    color: #969696;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.widgetCountNotify {
+  position: absolute;
+  right: -10px;
+  top: -3px;
+}
+
+.icontext {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+
+  .icon {
+    position: relative;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .searchContainer {
+    margin:.7rem 1rem;
+    flex: 100%;
+    order: 1;
+  }
+}
