@@ -34,7 +34,7 @@ Foi desenvolvido utilizando as seguintes tecnologias
 
 # 📚 Como usar?
 
-Para usar, basta acessar o [link aqui](foxtrot-concept.vercel.app) ou fazer um clone do repositório e instalar todas as dependências e executar.
+Para usar, basta acessar o [link aqui](https://foxtrot-concept.vercel.app) ou fazer um clone do repositório e instalar todas as dependências e executar.
 
 # 📝 License
 
